@@ -32,10 +32,10 @@ export default function Transactions() {
       dispatch(transfer({ amount, recipient }));
     }
     else if(action === "deposit"){
-      dispatch(deposit({ amount, recipient }));
+      dispatch(deposit({ amount }));
     }
     else if(action === "withdrawal"){
-      dispatch(withdrawal({ amount, recipient }));
+      dispatch(withdrawal({ amount }));
     }
   };
 
